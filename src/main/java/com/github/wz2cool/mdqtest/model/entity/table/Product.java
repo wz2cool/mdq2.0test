@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 public class Product {
     @Column(name = "product_id", insertable = false, updatable = false)
     private Integer productId;
+    @Column(name = "name")
     private String productName;
     private BigDecimal price;
     private Integer categoryId;
