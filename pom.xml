@@ -22,29 +22,37 @@
     </properties>
 
     <dependencies>
+        <!-- 基本库 -->
         <dependency>
             <groupId>com.github.wz2cool</groupId>
             <artifactId>mybatis-dynamic-query</artifactId>
             <version>2.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.4.4</version>
-            <scope>compile</scope>
-            <optional>true</optional>
-        </dependency>
+        <!-- 主要注册通用mapper -->
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>1.1.3</version>
+        </dependency>
+        <!-- mybatis 最新版本 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.4</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.0</version>
         </dependency>
+        <!-- 如果有Spring boot web 自带jackson 这个可以不要,防止版本冲突 -->
+        <!--  <dependency>
+              <groupId>com.fasterxml.jackson.core</groupId>
+              <artifactId>jackson-databind</artifactId>
+              <version>2.9.0</version>
+          </dependency>-->
 
+        <!-- spring boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -58,6 +66,7 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.2.0</version>
         </dependency>
+
 
         <dependency>
             <groupId>com.h2database</groupId>

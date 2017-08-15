@@ -1,11 +1,13 @@
 package com.github.wz2cool.mdqtest.model.entity.table;
 
 import javax.persistence.Column;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 
 @Table(name = "product")
 public class Product {
+    @Id
     @Column(name = "product_id", insertable = false, updatable = false)
     private Integer productId;
     @Column(name = "name")

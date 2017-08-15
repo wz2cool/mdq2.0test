@@ -65,7 +65,6 @@ public class TestDataController {
         dynamicQuery.addFilter(priceGroupFilter);
         dynamicQuery.addFilter(categoryNameFilter);
 
-
         Map<String, Object> params = MybatisQueryProvider.getQueryParamMap(dynamicQuery,
                 "whereExpression",
                 "sortExpression",
